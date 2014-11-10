@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item type="color" name="white">#ffffffff</item>
+    <item type="color" name="category_title_normal_background">#FFADB2AD</item>
+</resources>

@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/financial_index_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/titlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_titlebar_background" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="9.0dip"
+            android:text="@string/financial_index_title"
+            android:textColor="@color/white"
+            android:textSize="23.0sp" />
+
+        <Button
+            android:id="@id/titlebar_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="6.0dip"
+            android:background="@drawable/btn_titlebar_refresh_selector" />
+
+        <ProgressBar
+            android:id="@id/titlebar_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14.0dip"
+            android:layout_marginTop="10.0dip"
+            android:clickable="false"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/categorybar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-16dip"
+        android:background="@drawable/image_categorybar_background" >
+
+        <Button
+            android:id="@id/category_arrow_right"
+            android:layout_width="6.0dip"
+            android:layout_height="10.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="17dip"
+            android:background="@drawable/image_categorybar_right_arrow" />
+
+        <HorizontalScrollView
+            android:id="@id/categorybar_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="3.0dip"
+            android:layout_toLeftOf="@+id/category_arrow_right"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@id/category_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/financial_index_table_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10.0dip"
+        android:background="@drawable/image_financial_index_table_title_background"
+        >
+        <TextView 
+            android:id="@+id/financial_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/financial_index"
+            android:textColor="#000000"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/new_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/amounts_up_down"
+            android:text="@string/new_price"
+            android:textColor="#000000"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="5.0dip"
+            />
+           <TextView
+            android:id="@+id/amounts_up_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/amounts_limits"
+            android:text="@string/amounts_up_down"
+            android:textColor="#000000"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="5.0dip"
+            />
+      	<TextView
+            android:id="@+id/amounts_limits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/amounts_limits"
+            android:textColor="#000000"
+            android:layout_marginRight="40.0dip"
+            android:layout_marginTop="5.0dip"
+            />        
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/financial_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/image_list_separator_line"
+        android:fastScrollEnabled="true"
+        android:listSelector="@drawable/news_list_item_selector" />
+    
+</LinearLayout>

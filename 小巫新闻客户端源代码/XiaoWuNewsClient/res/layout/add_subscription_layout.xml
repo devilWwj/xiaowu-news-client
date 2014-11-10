@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/addSubscription_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/titlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/image_titlebar_background" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="8.0dip"
+            android:text="@string/addsubscription"
+            android:textColor="@color/white"
+            android:textSize="23.0sp" />
+
+        <Button
+            android:id="@id/titlebar_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="6.0dip"
+            android:background="@drawable/btn_titlebar_refresh_selector" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@id/subList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titlebar_layout"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/image_list_separator_line"
+        android:fastScrollEnabled="true"
+        android:listSelector="@drawable/news_list_item_selector" >
+    </ListView>
+	
+</RelativeLayout>

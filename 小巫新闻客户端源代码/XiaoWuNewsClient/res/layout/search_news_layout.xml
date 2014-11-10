@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/search_news_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/titlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_titlebar_background" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="9.0dip"
+            android:text="@string/search_news"
+            android:textColor="@color/white"
+            android:textSize="23.0sp" />
+    </RelativeLayout>
+	<RelativeLayout 
+	    android:id="@id/searchBox_layout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/image_search_searchbox"
+	    android:layout_marginTop="-16.0dip"
+	    >
+	    <Button 
+	        android:id="@id/search_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/search_button_selector"/>
+
+	    <TextView
+	        android:id="@+id/search_news_txt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="21dp"
+	        android:hint="@string/search_news" />
+	    
+	</RelativeLayout>
+	<ImageView 
+	    android:id="@+id/search_news_image"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="match_parent"
+	    android:layout_gravity="center"
+	    android:src="@drawable/image_prompt_smiley"/>
+</LinearLayout>

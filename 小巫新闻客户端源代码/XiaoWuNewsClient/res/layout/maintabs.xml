@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/image_tabbar_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@id/news_home_tabbar_button"
+                style="@style/main_tab_bottom"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/image_tabbar_button_news_home_selector"
+                android:tag="news_home_tabbar_button" />
+
+            <RadioButton
+                android:id="@id/news_subscription_tabbar_button"
+                style="@style/main_tab_bottom"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/image_tabbar_button_subscription_selector"
+                android:tag="news_subscription_tabbar_button" />
+
+            <RadioButton
+                android:id="@id/hot_news_tabbar_button"
+                style="@style/main_tab_bottom"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/image_tabbar_button_hot_news_selector"
+                android:tag="hot_news_tabbar_button" />
+
+            <RadioButton
+                android:id="@id/financial_index_tabbar_button"
+                style="@style/main_tab_bottom"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/image_tabbar_button_financial_index_selector"
+                android:tag="financial_index_tabbar_button" />
+
+            <RadioButton
+                android:id="@id/search_news_tabbar_button"
+                style="@style/main_tab_bottom"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/image_tabbar_button_search_news_selector"
+                android:tag="search_news_tabbar_button" />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

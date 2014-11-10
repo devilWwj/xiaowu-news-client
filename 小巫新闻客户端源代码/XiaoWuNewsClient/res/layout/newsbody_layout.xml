@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wwj="http://schemas.android.com/apk/res/com.xiaowu.news"
+    android:id="@id/news_body_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- android:fadingEdge="none"的作用解析
+    	设置拉滚动条时 ，边框渐变的放向。none（边框颜色不变）
+    	，horizontal（水平方向颜色变淡），vertical（垂直方向颜色变淡） -->
+    <ScrollView 
+        android:id="@id/news_body_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFE7E7E7"
+        android:fadingEdge="none"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:id="@id/news_body_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:textColor="#FF272727"
+                    android:textSize="18.0sp"
+                    android:textStyle="bold"
+                    />
+                <TextView 
+                    android:id="@id/news_body_ptime_source"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:layout_marginTop="9.0dip"
+                    android:textColor="#FF888888"
+                    android:textSize="12.0sp"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    android:src="@drawable/image_widget_hot_list_separator_line" 
+                    />
+                <ProgressBar 
+                    android:id="@id/news_body_detail_loding"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:layout_marginLeft="152.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:clickable="false"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+            <com.xiaowu.news.ConstomTextView
+                android:id="@id/news_body_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:textColor="#ff000000" 
+                wwj:image_width="200dip"
+                wwj:image_height="52dip"/>
+
+        </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>

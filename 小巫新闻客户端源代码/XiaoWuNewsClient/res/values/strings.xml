@@ -1,0 +1,36 @@
+<resources>
+
+    <string name="app_name">小巫新闻</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">小巫新闻</string>
+    <string name="loadmore_btn">加载更多</string>
+    <string name="loadmore_text">正在加载...</string>
+    <string name="et_reply">输入评论</string>
+    <string name="reply_post">发	表</string>
+   	<string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    <string name="reply">跟帖</string>
+	<string name="sourceText">原文</string>
+	<string name="nonews">该栏目没有新闻</string>
+	<string name="nomorenews">该栏目没有更多新闻</string>
+	<string name="loadnewserror">获取新闻失败</string>
+	<string name="backcancel">再按一次退出程序!!!</string>
+	<string name="noreply">没有回复信息</string>
+	<string name="getreplyfaild">获取评论失败</string>
+	<string name="subscription">关注</string>
+	<string name="begin_subscription">开始关注</string>
+	<string name="hot_news">热榜</string>
+	<string name="financial_index_title">财经</string>
+	<string name="search_news">搜新闻</string>
+	<string name="addsubscription">添加关注</string>
+	<string name="financial_index">指数</string>
+	<string name="new_price">最新价</string>
+	<string name="amounts_up_down">涨跌额</string>
+	<string name="amounts_limits">涨跌额</string>
+</resources>

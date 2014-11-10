@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/titlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/image_titlebar_background" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="8.0dip"
+            android:text="@string/subscription"
+            android:textColor="@color/white"
+            android:textSize="23.0sp" />
+
+        <Button
+            android:id="@id/addSubscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="6.0dip"
+            android:background="@drawable/btn_titlebar_subscribe_selector" />
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@id/subscription_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar_layout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/image_subscription_welcome_background" />
+       <Button
+        android:id="@id/begin_subscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subscription_welcome"
+        android:layout_marginTop="30.0dip"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/begin_subsciption_selector"
+        android:gravity="center"
+        android:text="@string/begin_subscription"
+        android:textSize="20sp"
+        android:textStyle="bold"
+         />
+</RelativeLayout>

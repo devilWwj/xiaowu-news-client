@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item type="drawable" name="main_background">#ffe7e7e7</item>
+    <item type="drawable" name="color_background">#ffe7e7e7</item>
+    <item type="drawable" name="newslist_item_background">#ffe7e7e7</item>
+</resources>

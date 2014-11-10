@@ -1,0 +1,3 @@
+#Mon Feb 04 11:01:51 CST 2013
+eclipse.preferences.version=1
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType42,pulse_com.sun.java.jdk.win32.x86_1.6.0.013">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="pulse_com.sun.java.jdk.win32.x86_1.6.0.013" javadocURL\="http\://java.sun.com/javase/6/docs/api/" name\="Sun JDK 1.6.0_13" path\="F\:\\Andriod Game Development\\Myeclipse 9.0\\Common\\binary\\com.sun.java.jdk.win32.x86_1.6.0.013"/>\r\n</vmType>\r\n</vmSettings>\r\n

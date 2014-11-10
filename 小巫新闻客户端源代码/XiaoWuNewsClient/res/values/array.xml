@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories">
+        <item>1|焦点</item>
+       	<item>2|国内</item>
+       	<item>3|国际</item>
+       	<item>4|军事</item>
+       	<item>5|体育</item>
+       	<item>6|科技</item>
+       	<item>7|汽车</item>
+       	<item>8|财经</item>
+       	<item>9|游戏</item>
+       	<item>10|女人</item>
+    </string-array>
+    <string-array name="howNewsCategories">
+        <item>1|热门图片</item>
+        <item>2|热搜词</item>
+        <item>3|媒体转载</item>
+        <item>4|热门转发</item>
+    </string-array>
+    <string-array name="financialCategories">
+        <item>1|A股</item>
+        <item>2|港股</item>
+        <item>3|美股</item>
+        <item>4|全球</item>
+        <item>5|外汇</item>
+        <item>6|期货</item>
+    </string-array>
+    <string-array name="a_financial_index_array">
+        <item>上证指数</item>
+        <item>深证指数</item>
+        <item>沪深300</item>
+        <item>中小板指</item>
+        <item>创业板指</item>
+        <item>B股指数</item>
+        <item>深证B指</item>
+        <item>上证180</item>
+        <item>基金指数</item>
+        <item>上证50</item>
+    </string-array>
+</resources>
